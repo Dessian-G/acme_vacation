@@ -5,6 +5,7 @@ const { client,
     fetchPlaces,
     fetchUsers,
     createVacation,
+    fetchVacations,
     destroyVacation } = require('./db');
 const express = require('express');
 const app = express();
