@@ -5,7 +5,7 @@ const { client,
     fetchPlaces,
     fetchUsers,
     createVacation,
-    fetchVacations,
+ 
     destroyVacation } = require('./db');
 const express = require('express');
 const app = express();
@@ -31,7 +31,7 @@ app.get('/api/places', async (req, res, next) => {
 
 app.get('/api/vacations', async (req, res, next) => {
     try {
-        res.send(await fetchVacations());
+        res.send(await createVacationVacations());
     }
     catch (ex) {
         next(ex);
