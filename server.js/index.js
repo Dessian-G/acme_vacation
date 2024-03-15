@@ -78,7 +78,7 @@ const init = async () => {
     console.log(`moe has an id of ${moe.id}`);
     console.log(`rome has an id of ${rome.id}`);
 }
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`listening on port ${port}`));
 
 init()
